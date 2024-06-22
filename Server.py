@@ -6,11 +6,11 @@ def create_database(db_name):
     cursor = conn.cursor()
 
     creation_query = '''
-    CREATE TABLE IF NOT EXISTS clinics (name, Address, PostalCode)
+    CREATE TABLE IF NOT EXISTS clinics (Name, Address, PostalCode)
     '''
     cursor.execute(creation_query)
     creation_query = '''
-    CREATE TABLE IF NOT EXISTS routes (name, Route)
+    CREATE TABLE IF NOT EXISTS routes (Name, Route)
     '''
     cursor.execute(creation_query)
     adding_query = '''
